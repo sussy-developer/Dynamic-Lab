@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import Accordion from './Accordion';
 import { REGIONS, SUB_REGIONS, PLACES } from '../LocationSelector/DropdownLocation/constants';
 import { CATEGORIES, TESTS_DATA } from '../Navlink/Dropdown/constants';
+import doodlePng from '../../../assets/doodle.png';
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -75,7 +76,10 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
           opacity: 0, 
           transform: 'scale(0.1)', 
           transformOrigin: 'calc(100% - 5.375rem) 3.75rem', 
-          pointerEvents: 'none' 
+          pointerEvents: 'none',
+          backgroundImage: `linear-gradient(rgba(255,255,255,0.93), rgba(255,255,255,0.93)), url(${doodlePng})`,
+          backgroundSize: 'cover, 200px',
+          backgroundRepeat: 'no-repeat, repeat'
         }}
       >
         <div style={{ padding: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid #e5e7eb' }}>

@@ -18,7 +18,7 @@ const Logo: React.FC = () => {
 
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }}>
-      <img ref={logoRef} src={logoPng} alt="Logo" style={{ height: '45px', width: 'auto', objectFit: 'contain' }} />
+      <img ref={logoRef} className="logo-img" src={logoPng} alt="Logo" style={{ height: '45px', width: 'auto', objectFit: 'contain' }} />
       <LogoText />
     </div>
   );

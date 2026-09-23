@@ -26,10 +26,11 @@ const LogoText: React.FC = () => {
   return (
     <span 
       ref={textRef}
+      className="logo-text"
       style={{
         color:'#029bb0', 
         fontFamily: '"Open Sans", sans-serif', 
-        fontSize: '1.5rem', 
+        fontSize: '1.3rem', 
         fontWeight: 700, 
         letterSpacing: '-0.02em',
         display: 'inline-flex'

@@ -1,0 +1,14 @@
+.app-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+

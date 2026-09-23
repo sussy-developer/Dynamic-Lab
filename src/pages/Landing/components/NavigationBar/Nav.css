@@ -1,0 +1,56 @@
+/* Responsive visibility classes */
+@media (max-width: 1280px) {
+  .desktop-only {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1281px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+/* Mobile Drawer Styles */
+.mobile-drawer-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(17, 24, 39, 0.4);
+  z-index: 100;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  opacity: 0; /* Handled by GSAP */
+}
+
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 85vw;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: 101;
+  box-shadow: -20px 0 50px rgba(0,0,0,0.1);
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hide scrollbars but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Common accordion item style */
+.accordion-content {
+  overflow: hidden;
+  height: 0;
+}

@@ -1,0 +1,22 @@
+.roll-text-container {
+  display: inline-block;
+}
+
+.roll-char-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.roll-char-orig, .roll-char-dupe {
+  display: inline-block;
+  white-space: pre; /* To preserve spaces correctly */
+}
+
+.roll-char-dupe {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: #029bb0; /* Brand teal color for the rolling text */
+}
